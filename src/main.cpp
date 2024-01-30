@@ -118,18 +118,3 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }
-
-
-// #ifdef DEBUG    
-// MEASURE FPS FOR DEBUGGING
-// delta = timeValue - lastTime;
-// Frame++;
-// if (delta >= 2.0) {
-//     double fps = double(Frame) / delta;
-//     std :: stringstream ss;
-//     ss << fps << " " << 2000.0 / Frame;
-//     glfwSetWindowTitle(window, ss.str().c_str());
-//     Frame = 0;
-//     lastTime = timeValue;
-// }
-// #endif
